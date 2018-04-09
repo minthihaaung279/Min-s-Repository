@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- dimension for margin -->
+    <dimen name="marginTopForSignUp">20dp</dimen>
+    <dimen name="mTop">30dp</dimen>
+
+    <!-- dimension for text size -->
+    <dimen name="tsSmall">12sp</dimen>
+    <dimen name="tsMedium">14sp</dimen>
+    <dimen name="tsLarge">16sp</dimen>
+    <dimen name="tsExtraLarge">18sp</dimen>
+
+</resources>

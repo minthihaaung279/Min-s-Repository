@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:theme="@style/AppThemeNoToolBar"
+    tools:context="com.thirdcs.team_pe_cake.paper.Activity.LoginActivity">
+
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/mytestinglogo"
+        android:layout_weight="3"
+        android:scaleType="centerInside"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tvPhoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone number"
+            android:singleLine="true"
+            android:inputType="number"
+            android:layout_marginTop="30dp"
+            android:drawableRight="@drawable/ic_action_phone_number"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/secondaryColor">
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/tvPassWord"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnLogIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="@dimen/tsLarge"
+        android:textAllCaps="false"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/button_style_login"/>
+
+    <LinearLayout
+        android:id="@+id/layoutForgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="right">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Forgot"
+            android:textSize="@dimen/tsSmall"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:textColor="@color/secondaryColor"
+            android:textSize="@dimen/tsSmall"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLogInFacebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login with facebook"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="@dimen/tsMedium"
+        android:background="@drawable/button_style_facebook"
+        android:textAllCaps="false"/>
+
+     <!-- layout for sign up text view-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't have an account?"
+            android:textSize="@dimen/tsMedium"/>
+
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textSize="@dimen/tsExtraLarge"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/primaryDarkColor"/>
+
+    </LinearLayout>
+
+</LinearLayout>

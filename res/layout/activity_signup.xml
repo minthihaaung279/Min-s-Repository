@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/photosignup"
+        android:layout_gravity="center_horizontal"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTopForSignUp">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your name"
+            android:inputType="text"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:drawableRight="@drawable/ic_action_username"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTopForSignUp">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone number"
+            android:inputType="number"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:drawableRight="@drawable/ic_action_phone_number"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/secondaryColor"
+        android:layout_marginTop="@dimen/marginTopForSignUp">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:imeOptions="actionNext"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="@color/secondaryColor"
+        android:layout_marginTop="@dimen/marginTopForSignUp">
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Re-enter password"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            android:imeOptions="actionDone"/>
+    </android.support.design.widget.TextInputLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textSize="@dimen/tsLarge"
+        android:textColor="@color/secondaryTextColor"
+        android:textAllCaps="false"
+        android:background="@drawable/button_style_login"
+        android:layout_marginTop="@dimen/mTop"/>
+    <LinearLayout
+        android:id="@+id/layoutAlreadyHaveAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have"
+            android:textSize="@dimen/tsMedium"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="an account"
+            android:textSize="@dimen/tsMedium"
+            android:textColor="@color/secondaryColor"
+            android:textStyle="bold"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>
