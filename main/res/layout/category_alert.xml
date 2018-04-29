@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/dialog_background">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/alertTitle"
+        android:text="Choose Category"
+        android:textColor="@color/white"
+        android:gravity="center_horizontal"
+        android:background="@color/primaryColor"
+        android:padding="16dp"/>
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <RadioButton
+            android:id="@+id/fiction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fiction"
+            android:textColor="@color/aBlue"
+            android:textSize="@dimen/tsExtraLarge"
+            android:layout_marginBottom="3dp"/>
+        <RadioButton
+            android:id="@+id/nonfiction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nonfiction"
+            android:textColor="@color/aRed"
+            android:textSize="@dimen/tsExtraLarge"
+            android:layout_marginBottom="3dp"/>
+        <RadioButton
+            android:id="@+id/health"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Health"
+            android:textColor="@color/aGreen"
+            android:textSize="@dimen/tsExtraLarge"
+            android:layout_marginBottom="3dp"/>
+        <RadioButton
+            android:id="@+id/science"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Science and Technology"
+            android:textColor="@color/aYellow"
+            android:textSize="@dimen/tsExtraLarge"
+            android:layout_marginBottom="3dp"/>
+        <RadioButton
+            android:id="@+id/humor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Humor literature"
+            android:textColor="@color/aOrange"
+            android:textSize="@dimen/tsExtraLarge"
+            android:layout_marginBottom="3dp"/>
+        <RadioButton
+            android:id="@+id/general"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="General"
+            android:textColor="@color/aBrown"
+            android:textSize="@dimen/tsExtraLarge"
+            android:layout_marginBottom="3dp"
+            android:checked="true"/>
+
+    </RadioGroup>
+</LinearLayout>
